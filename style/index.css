@@ -153,7 +153,6 @@
         background: white;
     }
 
-    /* STATUS */
     /* Stats bar */
     .status {
         color: white;
@@ -170,6 +169,36 @@
         background-color: #0b1d2a;
         text-align: center;
         align-items: center;
+    }
+    .sponsors {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    }
+
+    .sponsors h2 {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .sponsor-logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .sponsor_3 {
+        border-radius: 8px;
+    }
+
+    .sponsor-logos img {
+        width: 120px;
+        transition: 0.3s ease;
+    }
+
+    .sponsor-logos img:hover {
+        opacity: 1;
+        transform: scale(1.05);
     }
     /* FOOTER */
     footer {
