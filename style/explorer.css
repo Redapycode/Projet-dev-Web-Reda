@@ -40,6 +40,11 @@
     #search-bar {
         padding: 5px 10px;
     }
+        .menu-toggle {
+        display: none;
+        font-size: 28px;
+        cursor: pointer;
+    }
     main {
         padding: 50px 20px;
         max-width: 900px;

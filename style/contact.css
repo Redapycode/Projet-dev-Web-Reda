@@ -39,6 +39,11 @@ body {
     #search-bar {
         padding: 5px 10px;
     }
+    .menu-toggle {
+        display: none;
+        font-size: 28px;
+        cursor: pointer;
+    }
     .contact-container {
         display: flex;
         justify-content: center;
