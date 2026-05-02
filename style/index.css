@@ -152,7 +152,11 @@
     .nav-btn:hover {
         background: white;
     }
-
+    .menu-toggle {
+        display: none;
+        font-size: 28px;
+        cursor: pointer;
+    }
     /* Stats bar */
     .status {
         color: white;
@@ -223,3 +227,68 @@
         text-decoration: none;
         padding-inline: 20px;
     }
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        border-top: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+    } 
+    
+
+    #navLinks {
+        display: none;
+        width: 100%;
+    }
+
+    #navLinks.show {
+        display: block;
+    }
+
+    #navLinks a {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        text-align: center;
+    }
+    #search-bar {
+        display: none;
+    }
+    #navLinks a {
+        display: block;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    #navLinks a:hover {
+        color: #d4af37;
+    }
+}
