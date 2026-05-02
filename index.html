@@ -4,13 +4,18 @@
         <meta charset="utf-8">
         <title>InnoVault</title>
         <link rel="stylesheet" href="style/index.css">
-        <script src="login.js"></script>
+        <script src="script/index.js"></script>
+        <link rel="icon" type="image/x-icon" href="assets/logo_image.png">
     </head>
     <body>
         <header>
+
             <nav class="navbar">
+                <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+                    ☰
+                </div>
                 <div class="logo"><a href="index.html"><img src="assets\logo_image.png" style="width: 150px;"></a></div>
-                <ul class="list-ul">
+                <ul class="list-ul" id="navLinks">
                     <a href="#">Acceuil</a>
                     <a href="explorer.html">Expolrer</a>
                     <a href="About_us.html">À propos</a>
@@ -29,7 +34,7 @@
                     <h1>Secure Your Startup's Future</h1>
                     <p>The central vault for innovation assets, legal deposits, and intellectual property.</p>
                     <a href="login.html?mode=signup">
-                        <button class="cta-btn" id="signupBtn" onclick=goToSignup()>Get Started for Free</button>
+                        <button class="cta-btn" id="signupBtn">Get Started for Free</button>
                     </a>    
                 </div>
                 <div class="slides">
